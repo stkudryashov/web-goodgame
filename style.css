@@ -7,9 +7,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
+
     color: white;
-    margin: 0;
     background-color: black;
+
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,23 +21,17 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     width: 100%;
     max-width: 1170px;
+
     margin: 0 auto;
 }
 
 
 /* ----- Header ----- */
-
-.header {
-
-}
-
 .header__inner {
     display: flex;
     justify-content: space-between;
 
     padding: 22px 0 20px;
-
-
     align-items: center;
 }
 
@@ -45,7 +41,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ----- Navigation ----- */
-
 .nav {
     display: flex;
 
@@ -55,11 +50,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link {
     color: white;
-    opacity: .75;
     text-decoration: none;
 
     margin-left: 50px;
 
+    opacity: .75;
     transition: opacity .1s linear;
 }
 
@@ -73,45 +68,44 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ----- Intro ----- */
-
 .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    height: 800px;
     font-size: 36px;
 
-    height: 800px;
     background: url("images/background.jpg") center no-repeat;
     background-size: cover;
 }
 
 .intro__title {
     text-transform: uppercase;
-    margin: 0 0 20px;
+    margin-bottom: 20px;
 }
 
 .intro__subtitle {
     font-size: 24px;
     font-weight: 400;
-    margin: 0 0 20px;
+
+    margin-bottom: 20px;
 }
 
 
 /* ----- Button ----- */
-
 .btn {
     display: inline-block;
     text-decoration: none;
+
     font-weight: 400;
+    font-size: 24px;
     color: #fff;
 
-    font-size: 24px;
-
-    background-color: #be2d25b9;
     padding: 10px;
     border-radius: 4px;
 
+    background-color: #be2d25b9;
     transition: background-color .1s linear;
 }
 
@@ -121,9 +115,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ----- Modal ----- */
-
 .modal {
-    display: flex;
+    display: none;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -168,3 +161,36 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     margin-bottom: 2.2rem
 }
+
+
+/* ----- Features ----- */
+ .features {
+     display: flex;
+     flex-wrap: wrap;
+
+     margin: 80px 0;
+ }
+
+ .features__item {
+     width: 25%;
+
+     text-align: center;
+     margin-bottom: 80px;
+ }
+
+ .features__icon {
+     height: 60px;
+     margin-bottom: 10px;
+ }
+
+ .features__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    
+    margin-bottom: 10px;
+ }
+
+ .features__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+ }
