@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1170px;
 
+    padding: 0 20px;
+
     margin: 0 auto;
 }
 
@@ -76,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 
     height: 800px;
-    font-size: 36px;
+    font-size: 32px;
 
     background: url("images/background.jpg") center no-repeat;
     background-size: cover;
@@ -188,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 .features__title {
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: 700;
 
     margin-bottom: 10px;
 }
@@ -198,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
- /* ----- Photos ----- */
+/* ----- Photos ----- */
 .photos {
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 .photos__title {
     text-transform: uppercase;
     font-size: 18px;
+    font-weight: 700;
 
     margin-bottom: 5px;
 }
@@ -261,4 +265,61 @@ h1, h2, h3, h4, h5, h6 {
 .photos__text {
     font-size: 14px;
     font-weight: 400;
+}
+
+
+/* ----- Footer ----- */
+.footer {
+    padding: 70px 0;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__block {
+    width: 33.33333%;
+    text-align: center;
+}
+
+.footer__title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.footer__text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* ----- Social ----- */
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+}
+
+.social__link:hover .social__icon {
+    fill: red;
+}
+
+.social__icon {
+    display: block;
+    height: 24px;
+
+    fill: white;
+    transition: fill .2s linear;
 }
