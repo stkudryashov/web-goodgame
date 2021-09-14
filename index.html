@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>GODJI GAME</title>
+</head>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav class="nav">
+                <a class="nav__link" href="#">Link 1</a>
+                <a class="nav__link" href="#">Link 2</a>
+                <a class="nav__link" href="#">Link 3</a>
+                <a class="nav__link" href="#">Link 4</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Intro -->
+<div class="intro">
+    <div class="container">
+        <h1 class="intro__title">Киберспортивный компьютерный клуб</h1>
+        <h4 class="intro__subtitle">Найти клуб в своем городе по кнопке ниже</h4>
+        <a class="btn" href="#" onclick="ShowThis('modal')">Найти свой клуб</a>
+    </div>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modal__dialog">
+        <button class="btn modal__close" type="button" onclick="HideThis('modal')">Закрыть</button>
+
+        <h3 class="dialog__title">Клубы GODJI GAME</h3>
+        <div class="dialog__subtitle">Выбирай свой и приходи играть</div>
+
+        <div class="dialog__list">
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    function HideThis(hide) {
+            document.getElementById(hide).style.display = "none"
+        }
+    function ShowThis(show) {
+            document.getElementById(show).style.display = "flex"
+        }
+</script>
+    
+</body>
+</html>
