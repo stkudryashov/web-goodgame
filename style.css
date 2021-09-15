@@ -385,6 +385,14 @@ h1, h2, h3, h4, h5, h6 {
     .intro__title {
         font-size: 48px;
     }
+
+    .features__title {
+        font-size: 18px;
+    }
+
+    .features__subtitle {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -406,6 +414,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .btn {
         font-size: 18px;
+    }
+
+    .features__item {
+        width: 50%;
     }
 }
 
