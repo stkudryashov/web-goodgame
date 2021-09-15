@@ -406,6 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .burger {
         display: block;
+        padding-bottom: 20px;
     }
 
     .intro__title {
@@ -459,5 +460,66 @@ h1, h2, h3, h4, h5, h6 {
 
     .photos__image {
         min-width: 100%;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+    
+    .footer__inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .footer__block {
+        width: 100%;
+        text-align: center;
+
+        margin-bottom: 30px;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer__block:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 414px) {
+    .header__inner {
+        padding: 10px 0 8px;
+    }
+
+    .header__logo img {
+        width: 220px;
+    }
+
+    .intro__title {
+        font-size: 24px;
+    }
+
+    .intro__subtitle {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .features {
+        margin-top: 40px;
+    }
+    
+    .features__item {
+        margin-bottom: 40px;
+    }
+
+    .features__title {
+        font-size: 14px;
+    }
+
+    .features__subtitle {
+        font-size: 12px;
     }
 }
