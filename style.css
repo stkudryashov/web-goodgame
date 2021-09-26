@@ -147,7 +147,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     padding: 80px;
     width: 100%;
-    height: 100%;
     z-index: 1000;
 }
 
@@ -157,7 +156,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     border: 2px solid red;
     border-radius: 2px;
-    min-width: 600px;
 }
 
 .modal__close {
@@ -174,16 +172,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dialog__title {
-    font-size: 2.12rem;
+    font-size: 24px;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .dialog__subtitle {
-    font-size: 1.2rem;
+    font-size: 16px;
     color: #fff;
-    margin-bottom: 2.2rem
+    margin-bottom: 40px;
+}
+
+.city__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.city___item {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.city___item a {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.city___item a:hover {
+    color: rgb(255, 0, 0);
 }
 
 
@@ -395,6 +417,19 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ----- Media ----- */
+@media (max-width: 1730px) {
+    .city___item {
+        width: 33.33333%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .city___item {
+        width: 50%;
+    }
+}
+
+
 @media (max-width: 1200px) {
     .intro__title {
         font-size: 48px;
@@ -410,6 +445,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .photos__item {
         width: 50%;
+    }
+
+    .city___item a {
+        font-size: 14px;
     }
 }
 
@@ -507,6 +546,36 @@ h1, h2, h3, h4, h5, h6 {
     .footer__block:last-child {
         margin-bottom: 0px;
     }
+
+    .city___item {
+        width: 100%;
+    }
+
+    .dialog__title {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .dialog__subtitle {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .city___item {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .city___item a {
+        font-size: 12px;
+    }
+
+    .modal {
+        padding: 40px;
+    }
 }
 
 @media (max-width: 414px) {
@@ -544,5 +613,14 @@ h1, h2, h3, h4, h5, h6 {
 
     .features__subtitle {
         font-size: 12px;
+    }
+
+    .city___item {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .modal {
+        padding: 20px;
     }
 }
