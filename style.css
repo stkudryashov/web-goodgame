@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1170px;
 
     padding: 0 20px;
-
     margin: 0 auto;
 }
 
@@ -46,6 +45,22 @@ h1, h2, h3, h4, h5, h6 {
 .header__logo img {
     width: 260px;
 }
+
+.header__nav {
+    display: none;
+    justify-content: space-between;
+
+    padding: 22px 0 20px;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header__nav.active {
+    display: flex;
+}
+
 
 
 /* ----- Navigation ----- */
@@ -74,7 +89,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link:hover {
     opacity: 1;
 }
-
 
 /* ----- Intro ----- */
 .intro {
@@ -404,6 +418,10 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
 
+    .nav__link {
+        font-size: 16px;
+    }
+
     .burger {
         display: block;
         padding-bottom: 20px;
@@ -427,6 +445,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
+    .nav__link {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
     .intro {
         height: auto;
         padding-top: 100px;

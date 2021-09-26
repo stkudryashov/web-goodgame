@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Киберспортивные компьютерные клубы премиум класса с высоким уровнем сервиса">
+    <meta name="keywords" content="игровой клуб, компьютерный клуб, киберспортивный клуб">
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +18,7 @@
 
     <title>Игровые клубы Godji Game</title>
 </head>
-
+<body>
 <!-- Sprite -->
 <svg style="display: none;">
     <symbol id="vk" viewBox="0 0 548.358 548.358">
@@ -88,27 +91,34 @@
 </svg>
 
 <!-- Header -->
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
                 <img src="images/logo.png" alt="">
             </div>
+
             <nav class="nav">
-                <a class="nav__link" href="#">Оборудование</a>
-                <a class="nav__link" href="#">Фотографии</a>
-                <a class="nav__link" href="#">Франшиза</a>
+                <a class="nav__link" href="#" data-scroll="#features">Оборудование</a>
+                <a class="nav__link" href="#" data-scroll="#photos">Фотографии</a>
+                <a class="nav__link" href="https://goodgame-franchise.ru/" target="_blank">Франшиза</a>
             </nav>
 
-            <button class="burger" type="button">
+            <button class="burger" type="button" id="burger">
                 <span class="burger__item">Меню</span>
-            </div>
+            </button>
         </div><!-- /.header__inner -->
+        
+        <nav class="header__nav" id="menu">
+                <a class="nav__link" href="#" data-scroll="#features">Оборудование</a>
+                <a class="nav__link" href="#" data-scroll="#photos">Фотографии</a>
+                <a class="nav__link" href="https://goodgame-franchise.ru/" target="_blank">Франшиза</a>
+        </nav>
     </div><!-- /.container -->
 </header>
 
 <!-- Intro -->
-<div class="intro">
+<div class="intro" id="intro">
     <div class="container">
         <h1 class="intro__title">Киберспортивные <br /> компьютерные клубы</h1>
         <h4 class="intro__subtitle">Премиум класса с высоким уровнем сервиса</h4>
@@ -117,7 +127,7 @@
 </div>
 
 <!-- Features -->
-<div class="container">
+<div class="container" id="features">
     <div class="features">
         <div class="features__item">
             <img class="features__icon" src="images/features/features.svg" alt="">
@@ -170,7 +180,7 @@
 </div>
 
 <!-- Photos -->
-<div class="photos">
+<div class="photos" id="photos">
     <div class="photos__item">
         <img class="photos__image" src="images/photos/club-1.jpg" alt="">
         <div class="photos__content">
@@ -296,6 +306,7 @@
             document.getElementById(show).style.display = "flex"
         }
 </script>
-    
+
+<script src="script.js"></script>
 </body>
 </html>
